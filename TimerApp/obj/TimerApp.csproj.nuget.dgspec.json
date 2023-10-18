@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\Repos22\\DelegatesAndEventsTrainer\\TimerApp\\TimerApp\\TimerApp.csproj": {}
+    "C:\\Users\\Sprzetowo\\source\\repos\\Demówki\\TimerApp\\TimerApp\\TimerApp.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\Repos22\\DelegatesAndEventsTrainer\\TimerApp\\TimerApp\\TimerApp.csproj": {
+    "C:\\Users\\Sprzetowo\\source\\repos\\Demówki\\TimerApp\\TimerApp\\TimerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\Repos22\\DelegatesAndEventsTrainer\\TimerApp\\TimerApp\\TimerApp.csproj",
+        "projectUniqueName": "C:\\Users\\Sprzetowo\\source\\repos\\Demówki\\TimerApp\\TimerApp\\TimerApp.csproj",
         "projectName": "TimerApp",
-        "projectPath": "D:\\Repos\\Repos22\\DelegatesAndEventsTrainer\\TimerApp\\TimerApp\\TimerApp.csproj",
-        "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\Repos22\\DelegatesAndEventsTrainer\\TimerApp\\TimerApp\\obj\\",
+        "projectPath": "C:\\Users\\Sprzetowo\\source\\repos\\Demówki\\TimerApp\\TimerApp\\TimerApp.csproj",
+        "packagesPath": "C:\\Users\\Sprzetowo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sprzetowo\\source\\repos\\Demówki\\TimerApp\\TimerApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sprzetowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

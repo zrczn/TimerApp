@@ -10,9 +10,13 @@ namespace TimerApp
 {
     public class App
     {
+        AlarmClockService alrmSrv;
         TimerService tmrSrv;
         User usr = new User();
         TimerEventArgs tmrEvArgs;
+        AlarmClockArgs alrmArgs;
+
+        short actionNumb;
 
         public void Run()
         {
@@ -27,10 +31,19 @@ namespace TimerApp
                     ConsoleKeyInfo key = Console.ReadKey();
 
                     if (key.Key.ToString() == "Enter")
-                        usr.ExecuteTimerEvent(tmrEvArgs);
-
-                    usr.UnfollowEvents(tmrSrv);
-
+                    {
+                        switch (actionNumb)
+                        {
+                            case 0:
+                                usr.ExecuteTimerEvent(tmrEvArgs);
+                                usr.TimerPerformed -= tmrSrv.OnTimerPerformed;
+                                break;
+                            case 1:
+                                usr.ExecuteAlarmClockEvent(alrmArgs);
+                                usr.AlarmClockPerformed -= alrmSrv.OnAlarmClockPerformed;
+                                break;
+                        }
+                    }
                 }
 
                 Console.Clear();
@@ -49,6 +62,15 @@ namespace TimerApp
                             tmrEvArgs = new();
                             usr.TimerPerformed += tmrSrv.OnTimerPerformed;
                             tmrEvArgs.startsOn = timerStartsOn;
+                            actionNumb = 0;
+                            break;
+                        case 2:
+                            DateTime date = UI.Budzik();
+                            alrmSrv = new();
+                            alrmArgs = new();
+                            usr.AlarmClockPerformed += alrmSrv.OnAlarmClockPerformed;
+                            alrmArgs.date = date;
+                            actionNumb = 1;
                             break;
                     }
                 }

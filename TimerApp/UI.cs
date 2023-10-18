@@ -16,6 +16,7 @@ namespace TimerApp
             Console.WriteLine("Choose following actions:");
 
             Console.WriteLine("1.Timer");
+            Console.WriteLine("2.Alarm Clock");
             Console.WriteLine("9.Quit");
         }
 
@@ -38,6 +39,36 @@ namespace TimerApp
             } while (parseFlag);
 
             return -1;
+        }
+
+        public static DateTime Budzik()
+        {
+            string inputOne;
+            string inputTwo;
+            bool parseFlag = true;
+            DateTime date = new();
+
+            do
+            {
+                Console.Clear();
+
+                Console.WriteLine("Alarm Clock:");
+                Console.WriteLine("Enter date in format dd/mm/yyyy:");
+                inputOne = Console.ReadLine().Trim();
+                Console.WriteLine("Enter time in format: hh:mm");
+                inputTwo = Console.ReadLine().Trim();
+
+                string dateStringRepr = 
+                    string.Concat(inputOne, " " , inputTwo);
+
+                DateTime.TryParse(dateStringRepr, out date);
+
+                if(date != DateTime.MinValue)
+                    parseFlag = false;
+
+            } while (parseFlag);
+
+            return date;
         }
 
         public static void ChoosenAction()

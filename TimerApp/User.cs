@@ -11,12 +11,17 @@ namespace TimerApp
     public class User
     {
         public event EventHandler<TimerEventArgs> TimerPerformed;
+        public event EventHandler<AlarmClockArgs> AlarmClockPerformed;
 
         TimerService tmrSrv = new();
+        AlarmClockService alarmSrv = new();
 
-        public void UnfollowEvents(TimerService tmrService)
+        public void UnfollowEvents()
         {
-            TimerPerformed -= tmrService.OnTimerPerformed;
+            if(TimerPerformed != null)
+                TimerPerformed -= tmrSrv.OnTimerPerformed;
+            if(AlarmClockPerformed != null)
+                AlarmClockPerformed -= alarmSrv.OnAlarmClockPerformed;
         }
 
         public void ExecuteTimerEvent(TimerEventArgs startsOn)
@@ -24,15 +29,24 @@ namespace TimerApp
             OnTimerPerformed(startsOn);
         }
 
+        public void ExecuteAlarmClockEvent(AlarmClockArgs args)
+        {
+            OnAlarmClockPerformed(args);
+        }
+
         public bool CheckForEvents()
-            => TimerPerformed != null;
+            => TimerPerformed != null || AlarmClockPerformed != null;
 
         protected virtual void OnTimerPerformed(TimerEventArgs startsOn)
         {
             if(TimerPerformed != null)
-            {
                 TimerPerformed.Invoke(this, startsOn);
-            }
+        }
+
+        protected virtual void OnAlarmClockPerformed(AlarmClockArgs alArg)
+        {
+            if(AlarmClockPerformed != null)
+                AlarmClockPerformed.Invoke(this, alArg);
         }
 
     }

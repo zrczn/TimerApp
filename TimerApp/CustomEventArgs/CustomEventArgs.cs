@@ -10,4 +10,9 @@ namespace TimerApp.CustomEventArgs
     {
         public int startsOn { get; set; }
     }
+
+    public class AlarmClockArgs : EventArgs
+    {
+        public DateTime date { get; set; } = new();
+    }
 }
