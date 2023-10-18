@@ -1,0 +1,15 @@
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\bin\Debug\net7.0\TimerApp.exe
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\bin\Debug\net7.0\TimerApp.deps.json
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\bin\Debug\net7.0\TimerApp.runtimeconfig.json
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\bin\Debug\net7.0\TimerApp.dll
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\bin\Debug\net7.0\TimerApp.pdb
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.csproj.AssemblyReference.cache
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.AssemblyInfoInputs.cache
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.AssemblyInfo.cs
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.csproj.CoreCompileInputs.cache
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.dll
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\refint\TimerApp.dll
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.pdb
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\TimerApp.genruntimeconfig.cache
+D:\Repos\Repos22\DelegatesAndEventsTrainer\TimerApp\TimerApp\obj\Debug\net7.0\ref\TimerApp.dll
